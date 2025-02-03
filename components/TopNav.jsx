@@ -2,9 +2,6 @@ import { Text, View, StyleSheet, ImageBackground } from "react-native";
 import React from "react";
 import TopNavBg from "../assets/topnav-bg.png";
 
-import HomeIcon from "../assets/homeIcon.svg";
-import ProfileIcon from "../assets/profileIcon.svg";
-
 const TopNav = (props) => {
   return (
     <ImageBackground

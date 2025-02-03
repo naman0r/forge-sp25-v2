@@ -4,7 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import TopNav from "../components/TopNav.jsx";
 import BottomNav from "../components/BottomNav.jsx";
 
-const ProfilePage = (props) => {
+const ProfilePage = () => {
   return (
     <>
       <TopNav />

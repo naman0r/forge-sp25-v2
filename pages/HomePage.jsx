@@ -4,7 +4,7 @@ import TopNav from "../components/TopNav.jsx";
 import BottomNav from "../components/BottomNav.jsx";
 import react, { useState } from "react";
 
-const HomePage = (props) => {
+const HomePage = ({ navigation }) => {
   const [loggedIn, changeLoginStatus] = useState(false);
 
   return (
@@ -15,7 +15,7 @@ const HomePage = (props) => {
         <StatusBar style="auto" />
         <Button
           title="Go to Profile"
-          onPress={() => navigation.navigate("Profile")}
+          onPress={() => navigation.navigate("Profile")} // Now `navigation` is accessible
         />
       </View>
       <BottomNav login={loggedIn} />

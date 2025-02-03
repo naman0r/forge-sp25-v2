@@ -1,10 +1,13 @@
-import { Text, View, StyleSheet, ImageBackground } from "react-native";
+import { Text, View, StyleSheet, ImageBackground, Button } from "react-native";
 import React, { Component } from "react";
 import BottomNavBg from "../assets/topnav-bg.png";
 import HomeIcon from "../assets/homeIcon.svg";
 import ProfileIcon from "../assets/profileIcon.svg";
+import { useNavigation } from "@react-navigation/native"; // Import navigation hook
 
 const BottomNav = (props) => {
+  const navigation = useNavigation(); // Get navigation object
+
   return (
     <ImageBackground
       source={BottomNavBg}
@@ -13,6 +16,14 @@ const BottomNav = (props) => {
     >
       <View style={styles.overlay}>
         <Text style={styles.text}>this is the footer.</Text>
+        <Button
+          title="Home"
+          onPress={() => navigation.navigate("Home")} // Now `navigation` is accessible
+        />
+        <Button
+          title="Profile"
+          onPress={() => navigation.navigate("Profile")} // Now `navigation` is accessible
+        />
       </View>
     </ImageBackground>
   );
@@ -34,6 +45,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(19, 74, 202, 0.26)", // Optional dark overlay
     justifyContent: "center",
     alignItems: "center",
+    flexDirection: "row",
   },
   text: {
     paddingTop: 0,

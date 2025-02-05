@@ -6,6 +6,8 @@
 
 - figure out how to set up a backend API to interract with Raspberry Pi B [ask the rest of the team exactly what hardware is going to be used.]
 
+-
+
 # Resources:
 
 - Figma: https://www.figma.com/design/B4ozb7EsYHz9YCsnG6udQT/Forge-Spring-2025?node-id=0-1&p=f&t=Cx7oeb4iJ1xkVOpJ-0

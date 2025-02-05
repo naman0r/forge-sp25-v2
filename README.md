@@ -20,4 +20,4 @@
 
 - short tutorials for react native: https://reactnative.dev/docs/intro-react?language=javascript#props
 
--
+- timeline docu : https://docs.google.com/document/d/1SCOQCBel4Dwv9Dz1jT7tMq99dZn_RrvWCBQV9ZML9lM/edit?tab=t.0
